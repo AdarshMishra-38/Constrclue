@@ -12,7 +12,7 @@
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 28px;
 }
 
 .logo a>h2{
@@ -31,6 +31,7 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .bar {
