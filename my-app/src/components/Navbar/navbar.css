@@ -15,9 +15,18 @@
     margin-left: 28px;
 }
 
-.logo a>h2{
+.logo a{
+    text-decoration: none;
+}
+
+.logo a>h2,svg{
     display: inline-block;
 
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
 }
 
 .company-name {
