@@ -4,7 +4,7 @@ import { FaHammer, FaUsers, FaClipboardCheck } from 'react-icons/fa';
 
 const Feature = () => {
     return (
-        <section className="features">
+        <section className="features section-white">
             <h2>Our Features</h2>
             <div className="feature-cards">
                 <div className="feature-card">
