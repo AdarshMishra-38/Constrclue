@@ -1,65 +1,107 @@
-/* Navbar container */
+/* General Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    color: white;
-    
-
-    
-    padding: 15px 40px 15px 40px;
+    padding: 7px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
 }
 
-.company-name{
-    color: white;
-    text-decoration: none;
-    margin: 0px;
-    display: inline;
-    
-    
-    
-}
-
-.logo a{
+.logo {
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-left: 40px;
 }
 
+.logo a>h2{
+    display: inline-block;
 
-/* Logo styling */
-.logo h1 {
-    color: rgb(255, 250, 250);
-    margin: 0;
+}
+
+.company-name {
+    margin-left: 10px;
     font-size: 24px;
+    color: #fff;
 }
 
-.logo a{
-    text-decoration: none;
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-/* Navigation links container */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Sidebar and Links */
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    padding: 5px;
 }
 
-/* Styling for individual navigation items */
 .nav-links li {
     margin-left: 20px;
 }
 
-/* Styling for anchor tags */
 .nav-links a {
-    color: rgb(244, 242, 242);
     text-decoration: none;
+    color: #fff;
     font-size: 18px;
 }
 
-/* Hover effect */
-.nav-links a:hover {
-    color: gray;
+.nav-links li a:hover {
+    color: #f9f9e9;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 10;
+    }
+
+    .nav-links.open {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    /* Close button only in the sidebar (mobile view) */
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 50px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .nav-links a {
+        font-size: 24px;
+        color: #fff;
+    }
 }

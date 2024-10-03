@@ -54,6 +54,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 350px;
     margin:40px;
+
 }
 
 .feature-card:hover {
@@ -93,6 +94,8 @@
     text-align: left;
     padding: 10px;
     border-radius: 4px;
+    overflow-y: scroll;
+
 }
 
 @media (min-width: 320px) and (max-width: 791px) {

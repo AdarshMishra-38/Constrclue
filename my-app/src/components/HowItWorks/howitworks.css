@@ -92,6 +92,8 @@
     text-align: left;
     padding: 10px;
     border-radius: 4px;
+    overflow-y: scroll;
+
 }
 
 @media (min-width: 320px) and (max-width: 791px) {
