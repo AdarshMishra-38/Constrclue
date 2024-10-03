@@ -1,0 +1,65 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+
+    
+    padding: 15px 40px 15px 40px;
+}
+
+.company-name{
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    display: inline;
+    
+    
+    
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Logo styling */
+.logo h1 {
+    color: rgb(255, 250, 250);
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+/* Navigation links container */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for individual navigation items */
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Styling for anchor tags */
+.nav-links a {
+    color: rgb(244, 242, 242);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: gray;
+}
